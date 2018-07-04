@@ -2,12 +2,12 @@
 
 This little program adds the capability of graphing negative radii through matplotlib's polar graphing implementation.
 
-\textbf{Usage:}
+**Usage:**
 ```
 python -i polarGraphing.py "xmin" "xmax" "r(x)"
 ```
 
-Example:
+**Example:**
 ```
 python -i polarGraphing.py 0 "2*pi" "1 + 2*cos(x)"
 ```
