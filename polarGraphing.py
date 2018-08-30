@@ -81,3 +81,4 @@ ax2.plot(theta,r)
 dot2, = ax2.plot(theta[pos], r[pos], 'ro')
 
 fig.show()
+fig.savefig('plot.png')
