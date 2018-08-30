@@ -12,4 +12,6 @@ Example:
 python -i polarGraphing.py 0 "2*pi" "1 + 2*cos(x)"
 ```
 
+![alt text](plot.png?raw=true "Example plot")
+
 Functions included by default are {cos, sin, tan, arccos, arcsin, arctan}. Any additional functions included in the numpy package may be accessed with prefix "np."
