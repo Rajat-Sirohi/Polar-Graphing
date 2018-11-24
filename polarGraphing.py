@@ -7,7 +7,7 @@ import sys
 
 if sys.argv[1] == "-1" and sys.argv[2] == "-1":
     xmin=0
-    xmax=7
+    xmax=2*pi
 else:
     xmin=eval(sys.argv[1])
     xmax=eval(sys.argv[2])
