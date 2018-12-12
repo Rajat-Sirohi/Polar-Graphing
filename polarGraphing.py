@@ -33,34 +33,37 @@ def updateDot(pos):
 
 def press(event):
     global n, pos, x, y, theta, r
-    if event.key == 'left':
+    if event.key == 'k':
         pos -= (int)(.01*n)
         if (pos < 0):
             pos = 0
         updateDot(pos)
-    if event.key == 'right':
+    if event.key == 'j':
         pos += (int)(.01*n)
         if (pos >= n):
             pos = n-1
         updateDot(pos)
-    if event.key == 'down':
+    if event.key == 'K':
         pos -= (int)(.1*n)
         if (pos < 0):
             pos = 0
         updateDot(pos)
-    if event.key == 'up':
+    if event.key == 'J':
         pos += (int)(.1*n)
         if (pos >= n):
             pos = n-1
         updateDot(pos)
-    if event.key == 'k':
-        dpos = (int)(.03*n)
-        while (1==1):
-            pos += dpos
-            if (pos >= n or pos < 0):
-                dpos *= -1
-            else:
-                updateDot(pos)
+    if event.key == 'l':
+        try:
+            dpos = (int)(.01*n)
+            while True:
+                pos += dpos
+                if (pos >= n or pos < 0):
+                    dpos *= -1
+                else:
+                    updateDot(pos)
+        except KeyboardInterrupt:
+            pass
 
 for i in x:
     r.append(abs(func(i)))
