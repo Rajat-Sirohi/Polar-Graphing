@@ -1,6 +1,6 @@
 # Polar-Graphing
 
-This little program adds the capability of graphing negative radii through matplotlib's polar graphing implementation.
+This program adds the capability of graphing negative radii through matplotlib's polar graphing implementation.
 
 Usage:
 ```
